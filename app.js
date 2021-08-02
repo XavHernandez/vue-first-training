@@ -3,12 +3,16 @@ const app = Vue.createApp({
     return {
       title: 'The 48 Laws of Power',
       author: 'Robert Greene',
-      age: 53
+      age: 53,
+      showBooks: true
     }
   },
   methods: {
     changeTitle(title) {
       this.title = title
+    },
+    toggleShowBooks() {
+      this.showBooks = !this.showBooks
     }
   }
 })
