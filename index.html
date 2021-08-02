@@ -7,6 +7,7 @@
   <title>Vue First Training</title>
   <script src="https://unpkg.com/vue@3.0.2"></script>
 </head>
+
 <body>
   <h1>My First VUE Training</h1>
   
@@ -14,9 +15,11 @@
     <p>{{ title }} - {{author}}, {{age}} years old.</p>
 
     <button v-on:click="age++">Increase Age</button>
-    <button v-on:click="age--">Decrease Age</button>
+    <button @click="age--">Decrease Age</button>
+    <div @click="changeTitle('The Daily Laws')">Change Book Title</div>
   </div>
 
   <script src="app.js"></script>
 </body>
+
 </html>
