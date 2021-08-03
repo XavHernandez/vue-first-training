@@ -15,6 +15,10 @@
       margin: 20px;
       display: inline-block;
     }
+
+    .fav{
+      color: red;
+    }
   </style>
 </head>
 
@@ -28,7 +32,7 @@
 
       <ul>
         <li v-for="book in books">
-          <h3>{{ book.title }} - {{book.author}}.</h3>
+          <h3 :class="{fav: book.isFav}">{{ book.title }} - {{book.author}}.</h3>
         </li>
       </ul>
     </div>

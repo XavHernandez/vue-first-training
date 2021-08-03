@@ -8,9 +8,9 @@ const app = Vue.createApp({
       x: 0,
       y: 0,
       books: [
-        {title: 'Art of Seduction', author: 'Robert Greene'}, 
-        {title: 'Dune', author: 'Frank Herbert'}, 
-        {title: 'Hyperion', author: 'Dan Simmons'},
+        {title: 'Art of Seduction', author: 'Robert Greene', isFav: true}, 
+        {title: 'Dune', author: 'Frank Herbert', isFav: false}, 
+        {title: 'Hyperion', author: 'Dan Simmons', isFav: true},
       ],
       url: 'https://www.google.com'
     }
