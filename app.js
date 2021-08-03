@@ -4,7 +4,9 @@ const app = Vue.createApp({
       title: 'The 48 Laws of Power',
       author: 'Robert Greene',
       age: 53,
-      showBooks: true
+      showBooks: true,
+      x: 0,
+      y: 0
     }
   },
   methods: {
@@ -13,6 +15,16 @@ const app = Vue.createApp({
     },
     toggleShowBooks() {
       this.showBooks = !this.showBooks
+    },
+    handleEvent(event, data) {
+      console.log(event, event.type)
+      if (data) {
+        console.log(data)
+      }
+    },
+    handleMousemove(e) {
+      this.x = e.offsetX
+      this.y = e.offsetY
     }
   }
 })
