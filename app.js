@@ -6,7 +6,13 @@ const app = Vue.createApp({
       age: 53,
       showBooks: true,
       x: 0,
-      y: 0
+      y: 0,
+      books: [
+        {title: 'Art of Seduction', author: 'Robert Greene'}, 
+        {title: 'Dune', author: 'Frank Herbert'}, 
+        {title: 'Hyperion', author: 'Dan Simmons'},
+      ],
+      url: 'https://www.google.com'
     }
   },
   methods: {
