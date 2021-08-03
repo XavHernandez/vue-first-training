@@ -32,6 +32,11 @@ const app = Vue.createApp({
       this.x = e.offsetX
       this.y = e.offsetY
     }
+  },
+  computed: {
+    filteredBooks() {
+      return this.books.filter((book) => book.isFav)
+    }
   }
 })
 

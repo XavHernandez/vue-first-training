@@ -31,7 +31,7 @@
       <p>{{ books[0].title }} - {{books[0].author}}.</p>
 
       <ul>
-        <li v-for="book in books">
+        <li v-for="book in filteredBooks">
           <h3 :class="{fav: book.isFav}">{{ book.title }} - {{book.author}}.</h3>
         </li>
       </ul>
